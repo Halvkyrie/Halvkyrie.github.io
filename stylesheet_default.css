@@ -1,0 +1,21 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 4px;
+    margin: 4px;
+}
+h1 {
+    font-size: 300%;
+    font-style: bold;
+}
+h2{
+    font-size: 250%;
+    font-style: bold;
+}
+h3{
+    font-size: 200;
+    font-style: normal;
+}
+p{
+    padding: 2px;
+    margin: 2px;
+}
