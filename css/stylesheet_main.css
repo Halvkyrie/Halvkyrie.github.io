@@ -5,12 +5,12 @@ body {
 }
 nav ul, footer ul {
     font-style: bold;
-    padding: 0px
+    padding: 2px
 }
 nav ul li, footer ul li {
     display: inline-block;
     margin-right: 10px;
-    padding: 0px;
+    padding: 2px;
 }
 h1 {
     font-size: 300%;
