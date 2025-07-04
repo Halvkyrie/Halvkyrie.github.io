@@ -1,0 +1,9 @@
+title: Halvkyrie's Page
+description:
+theme: jekyll-theme-cayman
+permalink: pretty
+show_downloads: false
+collections: 
+  games:
+    output: true
+    permalink: /:collection/:path

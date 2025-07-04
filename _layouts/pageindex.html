@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<main id="content" class="main-content" role="main">
+{{ content }}
+{%- assign visible_pages = site.pages | where_exp: "page", "page.hide != true" -%}
+{%- assign indexed_pages = visible_pages | where_exp: "page", "page.categories != 'main'" -%}
+{%- for page in indexed_pages -%}
+  <h3>
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+  </h3>
+{%- endfor -%}
+</main>

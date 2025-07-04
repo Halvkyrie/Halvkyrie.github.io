@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div id="categories">
+  {%- for category in site.categories -%}
+  {%- capture category_name -%}{{ category | first }}{%- endcapture -%}
+  <div class="category-head">
+  <h3><a href="{{ site.url }}/{{ category_name | slugify }}">{{category_name}}</a></h3>
+  </div>
+  {%- endfor -%}
+</div>
