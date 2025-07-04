@@ -9,4 +9,4 @@ categories: other
 
 _yay_
 
-[back](./)
+[back](/)

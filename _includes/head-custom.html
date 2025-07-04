@@ -7,3 +7,6 @@
 <!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
 <link rel="icon" type="image/svg" href="{{ 'assets/svg/icon_lizzie_skull_01.svg' | relative_url }}">
 <!-- end custom head snippets -->
+{%- if site.debug.show_page_path -%}
+<h3>This page is located at {{ page.path }}</h3>
+{%- endif -%}

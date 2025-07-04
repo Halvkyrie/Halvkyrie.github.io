@@ -19,9 +19,9 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: page.title | default: site.github.project_tagline }}</h2>
       <a href="/" class="btn">Home</a>
-      <a href="/index" class="btn">Index</a>
-      <a href="/games" class="btn">Games</a>
-      <a href="/about" class="btn">About</a>
+      {%- for button in site.header.buttons -%}
+      <a href="{{ button | relative_url }}" class="btn">{{ button | capitalize }}</a>
+      {%- endfor -%}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
