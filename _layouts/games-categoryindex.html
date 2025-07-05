@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+{{ content }}
+
 <div id="categories">
   {%- assign visible_categories = site.games | where_exp: "page", "page.hide != true" -%}
   {%- for game in visible_categories -%}
