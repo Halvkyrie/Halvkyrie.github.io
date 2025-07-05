@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
+
 {{ content }}
+
 {%- assign visible_pages = site.pages | where_exp: "page", "page.hide != true" -%}
 {%- assign indexed_pages = visible_pages | where_exp: "page", "page.categories != 'main'" -%}
+<h2>{{ page.list_title | default: page.title }}</h2>
 {%- for page in indexed_pages -%}
   <h3>
     <li>

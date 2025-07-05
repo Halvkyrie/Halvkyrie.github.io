@@ -1,5 +1,5 @@
 ---
-layout: post-category-index
+layout: post-category-subindex
 hide: false
 ---
-placeholder for post category index pages
+placeholder for post category subindex pages
