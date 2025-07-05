@@ -1,5 +1,5 @@
 ---
 layout: post-category-index
-hide: true
+hide: false
 ---
 placeholder for post category index pages
