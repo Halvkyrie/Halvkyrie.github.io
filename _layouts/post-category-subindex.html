@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{%- assign category_from_dir = page.dir | split: "/" | last -%}
+<h2>{{ category_from_dir | capitalize }}</h2>
+<div>
+  <ul>
+    {%- assign visible_posts = site.posts | where_exp: "page", "page.hide != true" -%}
+    {%- for post in visible_posts -%}
+      {%- if post.categories contains category_from_dir -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>

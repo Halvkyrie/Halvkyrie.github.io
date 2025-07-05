@@ -1,0 +1,25 @@
+title: Halvkyrie's Page
+description:
+theme: jekyll-theme-cayman
+permalink: pretty
+debug:
+  show_page_path: false
+header:
+  buttons:
+    - name: index
+
+    - name: posts
+
+    - name: categories
+
+    - name: about
+
+show_downloads: false
+collections: 
+  posts:
+    permalink: /posts/:categories/:title
+  games:
+    output: true
+    permalink: /:collection/:path
+page_index:
+  hide_main: true
