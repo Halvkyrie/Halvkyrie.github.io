@@ -3,7 +3,7 @@ description:
 theme: jekyll-theme-cayman
 permalink: pretty
 debug:
-  show_page_path: true
+  show_page_path: false
 header:
   buttons:
     - index
@@ -15,3 +15,5 @@ collections:
   games:
     output: true
     permalink: /:collection/:path
+page_index:
+  hide_main: true

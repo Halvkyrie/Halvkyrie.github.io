@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: main
-title: Halvkyrie's homepage
+title: Home
 description: Hi! This is is where I post things. maybe.
 ---
 
