@@ -6,12 +6,19 @@ debug:
   show_page_path: false
 header:
   buttons:
-    - index
-    - posts
-    - categories
-    - about
+    - name: index
+
+    - name: posts
+
+    - name: categories
+      permalink: /posts/categories
+
+    - name: about
+    
 show_downloads: false
 collections: 
+  posts:
+    permalink: /posts/:categories/:title
   games:
     output: true
     permalink: /:collection/:path
