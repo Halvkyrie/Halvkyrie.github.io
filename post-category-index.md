@@ -2,7 +2,7 @@
 layout: post-category-index
 title: Post Category Index
 description: 
-permalink: /posts/categories/
+permalink: /categories/
 categories: main
 list_title: Post Categories
 ---

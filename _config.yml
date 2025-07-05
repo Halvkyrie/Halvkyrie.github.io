@@ -11,10 +11,9 @@ header:
     - name: posts
 
     - name: categories
-      permalink: /posts/categories
 
     - name: about
-    
+
 show_downloads: false
 collections: 
   posts:

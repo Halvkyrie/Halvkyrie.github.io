@@ -10,7 +10,7 @@ layout: default
   {%- capture category_name -%}{{ category | first }}{%- endcapture -%}
   <h3>
     <li>
-      <a href="{{ page.url }}/{{ category_name }}">{{ category_name | capitalize }}</a>
+      <a href="{{ page.url }}{{ category_name }}">{{ category_name | capitalize }}</a>
     </li>
   </h3>
 {%- endfor -%}
