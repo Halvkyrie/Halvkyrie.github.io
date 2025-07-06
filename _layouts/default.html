@@ -20,7 +20,7 @@
       <h2 class="project-tagline">{{ page.description | default: page.title | default: site.github.project_tagline }}</h2>
       <a href="/" class="btn">Home</a>
       {%- for button in site.header.buttons -%}
-      <a href="{{ button.permalink | default: button.name | relative_url }}" class="btn">{{ button.name | capitalize }}</a>
+      <a href="{{ button.permalink | default: button.name | relative_url }}/" class="btn">{{ button.name | capitalize }}</a>
       {%- endfor -%}
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
